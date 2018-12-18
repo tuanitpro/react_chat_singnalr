@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,7 +19,7 @@ namespace AppChat
 
             services.AddSignalR(hubOptions =>
             {
-                hubOptions.EnableDetailedErrors = true;                
+                hubOptions.EnableDetailedErrors = true;
             }).AddJsonProtocol(options =>
             {
                 options.PayloadSerializerSettings.ContractResolver =
